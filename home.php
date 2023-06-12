@@ -37,89 +37,66 @@ include 'components/add_cart.php';
 
 
 
-<section class="hero">
-
-   <div class="swiper hero-slider">
-
-      <div class="swiper-wrapper">
-
-         <div class="swiper-slide slide">
-            <div class="content">
-               <span>order online</span>
-               <h3>delicious pizza</h3>
-               <a href="menu.html" class="btn">see menus</a>
-            </div>
-            <div class="image">
-               <img src="images/home-img-1.png" alt="">
-            </div>
-         </div>
-
-         <div class="swiper-slide slide">
-            <div class="content">
-               <span>order online</span>
-               <h3>chezzy hamburger</h3>
-               <a href="menu.html" class="btn">see menus</a>
-            </div>
-            <div class="image">
-               <img src="images/home-img-2.png" alt="">
-            </div>
-         </div>
-
-         <div class="swiper-slide slide">
-            <div class="content">
-               <span>order online</span>
-               <h3>rosted chicken</h3>
-               <a href="menu.html" class="btn">see menus</a>
-            </div>
-            <div class="image">
-               <img src="images/home-img-3.png" alt="">
-            </div>
-         </div>
-
+<div class="wrapper"> 
+   <div class="homeone"> 
+      <div class="feature">
+        
+         <div class="text">Скидки -6% на все букеты по предзаказу на 8 марта</div></a>
       </div>
-
-      <div class="swiper-pagination"></div>
-
+      
+      <div class="special"><a href="quick_view.html">
+         <div class="text">Розы</div></a>
+      </div>
+      <div class="amasing">
+         <a href="quick_view.html">
+         <div class="text">Пряники</div></a>
+      </div>
+      <div class="news">
+         <a href="quick_view.html">
+         <div class="text">Подарочные корзины</div></a>
+      </div>
+      <div class="photos">
+         <a href="quick_view.html">
+         <div class="text">Цветы в коробке</div>
+      </div></a>
    </div>
-
-</section>
+</div>
 
 <section class="category">
 
-   <h1 class="title">food category</h1>
+   <h1 class="title">наше производство</h1>
 
    <div class="box-container">
 
-      <a href="category.php?category=fast food" class="box">
-         <img src="images/cat-1.png" alt="">
-         <h3>fast food</h3>
+      <a href="category.html" class="box">
+         <img src="images/cake.svg" alt="">
+         <h3 class="black">торты</h3>
       </a>
-
-      <a href="category.php?category=main dish" class="box">
-         <img src="images/cat-2.png" alt="">
-         <h3>main dishes</h3>
+   
+      <a href="category.html" class="box">
+         <img src="images/prana.svg" alt="">
+         <h3>пряники</h3>
       </a>
-
-      <a href="category.php?category=drinks" class="box">
-         <img src="images/cat-3.png" alt="">
-         <h3>drinks</h3>
+   
+      <a href="category.html" class="box">
+         <img src="images/flower.svg" alt="">
+         <h3>зефирные букеты</h3>
       </a>
-
-      <a href="category.php?category=desserts" class="box">
+   
+      <a href="category.html" class="box">
          <img src="images/cat-4.png" alt="">
-         <h3>desserts</h3>
+         <h3>капкейки</h3>
       </a>
 
    </div>
 
 </section>
-
 
 
 
 <section class="products">
 
-   <h1 class="title">latest dishes</h1>
+<h1 class="title">Каталог</h1>
 
    <div class="box-container">
 
@@ -140,7 +117,7 @@ include 'components/add_cart.php';
          <a href="category.php?category=<?= $fetch_products['category']; ?>" class="cat"><?= $fetch_products['category']; ?></a>
          <div class="name"><?= $fetch_products['name']; ?></div>
          <div class="flex">
-            <div class="price"><span>$</span><?= $fetch_products['price']; ?></div>
+         <div class="price"><?= $fetch_products['price']; ?><span> рублей</span></div>
             <input type="number" name="qty" class="qty" min="1" max="99" value="1" maxlength="2">
          </div>
       </form>
@@ -154,7 +131,7 @@ include 'components/add_cart.php';
    </div>
 
    <div class="more-btn">
-      <a href="menu.html" class="btn">veiw all</a>
+      <a href="menu.html" class="btn">Показать все</a>
    </div>
 
 </section>
@@ -184,7 +161,7 @@ include 'components/add_cart.php';
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
-<script>
+<!-- <script>
 
 var swiper = new Swiper(".hero-slider", {
    loop:true,
@@ -196,7 +173,7 @@ var swiper = new Swiper(".hero-slider", {
    },
 });
 
-</script>
+</script> -->
 
 </body>
 </html>
