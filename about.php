@@ -37,7 +37,7 @@ if(isset($_SESSION['user_id'])){
 
 <div class="heading">
    <h3>О нас</h3>
-   <p><a href="home.php">home</a> <span> / about</span></p>
+   <p><a href="home.php">Главная</a> <span> / about</span></p>
 </div>
 
 <!-- about section starts  -->
